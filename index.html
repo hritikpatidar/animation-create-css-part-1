@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Animation effects</title>
+        <style>
+            .margin{
+                margin: 200px auto;
+                width: 100px;
+                height: 100px;
+            }
+            .box{
+                background-color: red;
+                animation-name: abc;
+                animation-duration: 2s;
+                animation-timing-function: linear;
+                animation-iteration-count: infinite;
+                animation-direction: alternate;
+            }
+            @keyframes abc {
+                0%{
+                    transform: rotateZ(0deg);
+                }
+             
+                100%{
+                    transform: rotateZ(360deg);
+                }
+               
+
+            }
+            .box1{
+                background-color: yellow;
+                animation-name: abcd;
+                animation-duration: 2s;
+                animation-timing-function: ease-in;
+                animation-iteration-count: infinite;
+            }
+            @keyframes abcd {
+                0%{
+                    transform: rotateZ(0deg);
+                }
+             
+                100%{
+                    transform: rotateZ(360deg);
+                }
+               
+
+            }
+            .box2{
+                background-color: rgb(74, 20, 224);
+                animation-name: abce;
+                animation-duration: 2s;
+                animation-timing-function: ease-out;
+                animation-iteration-count: infinite;
+            }
+            @keyframes abce {
+                0%{
+                    transform: rotateZ(0deg);
+                }
+             
+                100%{
+                    transform: rotateZ(360deg);
+                }
+               
+
+            }
+            .box3{
+                background-color: red;
+                animation-name: abcf;
+                animation-duration: 3s;
+                animation-timing-function: linear;
+                animation-iteration-count: infinite;
+                animation-direction: alternate;
+            }
+            @keyframes abcf {
+                0%{
+                    transform: translateX(-500px);
+                }
+                25%{
+                    background-color: pink;
+                }   
+                50%{
+                    background-color: blue;
+                }   
+                75%{
+                    background-color: green;
+                }         
+                100%{
+                    transform: translateX(400px);
+                }
+               
+
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box margin"></div>
+        <div class="box1 margin"></div>
+        <div class="box2 margin"></div>
+        <div class="box3 margin"></div>
+    </body>
+</html>
